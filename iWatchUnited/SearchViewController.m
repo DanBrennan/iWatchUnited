@@ -36,7 +36,7 @@
       //  NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         
-        MasterViewController destinationViewController = segue.destinationViewController;
+        MasterViewController *destinationViewController = segue.destinationViewController;
         destinationViewController.title = @"rrr";
         
         //RecipeDetailViewController *destViewController = segue.destinationViewController;

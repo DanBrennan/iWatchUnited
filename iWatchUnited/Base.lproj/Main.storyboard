@@ -32,11 +32,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".LucidaGrandeUI" family=".Lucida Grande UI" pointSize="11"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="pGg-6v-bdr" kind="show" id="KwI-MZ-c5X"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="sss:" destination="jfb-uw-fRH" id="z6W-fL-SrJ"/>
-                                <segue destination="pGg-6v-bdr" kind="show" identifier="searchCriteriaSegue" id="SWt-b1-tZG"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -287,6 +286,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SWt-b1-tZG"/>
+        <segue reference="KwI-MZ-c5X"/>
     </inferredMetricsTieBreakers>
 </document>
