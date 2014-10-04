@@ -25,12 +25,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+  //  self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
 //    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
 //    self.navigationItem.rightBarButtonItem = addButton;
     
     self.title = @"Venues";
+    
+    VenueDetails *venue1 = [[VenueDetails alloc] initWithVenueName:@"The Pub Next Door" phoneNumber:@"020891929219" address:@"12 Old Street, London, W1 4GF" email:@"admin@thepubnextdoor" website:@"thepubnextdoor.com" comments:@"If it's televised - it's on!"];
+    VenueDetails *venue2 = [[VenueDetails alloc] initWithVenueName:@"Crest Hotel Sports Bar" phoneNumber:@"(02) 9358 2755 " address:@"111 Darlinghurst Road, Sydney 2011, Australia" email:@"" website:@"" comments:@""];
+    VenueDetails *venue3 = [[VenueDetails alloc] initWithVenueName:@"Elephant & Wheelbarrow" phoneNumber:@"03 9639 8444 " address:@"94-96 Bourke Street, Melbourne VIC 3000" email:@"" website:@"www.bourkest.elephantandwheelbarrow.com.au" comments:@"On the corner of Bourke St and Exhibition St"];
+    VenueDetails *venue4 = [[VenueDetails alloc] initWithVenueName:@"Moondyne Joe's" phoneNumber:@"08 9430 5513" address:@"173 Wray Ave, (Cnr Hampton Road), Fremantle, Western Australia 6160" email:@"" website:@"" comments:@"The big screen TV in the Sports Bar telecasts all AFL, UK Football, Rugby, NRL, Boxing, International Cricket and other major sporting events on channels such as Fox Sport, ESPN and Setanta, All events, where possible are shown live."];
+    
+     _venues = [NSMutableArray arrayWithObjects:venue1, venue2, venue3, venue4, nil];
     
     id delegate = [[UIApplication sharedApplication] delegate];
     self.managedObjectContext = [delegate managedObjectContext];

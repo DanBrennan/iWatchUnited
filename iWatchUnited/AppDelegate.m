@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "MasterViewController.h"
 #import "VenueDetails.h"
+#import "SearchViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,20 +23,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
     
-    VenueDetails *venue1 = [[VenueDetails alloc] initWithVenueName:@"The Pub Next Door" phoneNumber:@"020891929219" address:@"12 Old Street, London, W1 4GF" email:@"admin@thepubnextdoor" website:@"thepubnextdoor.com" comments:@"If it's televised - it's on!"];
-    VenueDetails *venue2 = [[VenueDetails alloc] initWithVenueName:@"Crest Hotel Sports Bar" phoneNumber:@"(02) 9358 2755 " address:@"111 Darlinghurst Road, Sydney 2011, Australia" email:@"" website:@"" comments:@""];
-    VenueDetails *venue3 = [[VenueDetails alloc] initWithVenueName:@"Elephant & Wheelbarrow" phoneNumber:@"03 9639 8444 " address:@"94-96 Bourke Street, Melbourne VIC 3000" email:@"" website:@"www.bourkest.elephantandwheelbarrow.com.au" comments:@"On the corner of Bourke St and Exhibition St"];
-    VenueDetails *venue4 = [[VenueDetails alloc] initWithVenueName:@"Moondyne Joe's" phoneNumber:@"08 9430 5513" address:@"173 Wray Ave, (Cnr Hampton Road), Fremantle, Western Australia 6160" email:@"" website:@"" comments:@"The big screen TV in the Sports Bar telecasts all AFL, UK Football, Rugby, NRL, Boxing, International Cricket and other major sporting events on channels such as Fox Sport, ESPN and Setanta, All events, where possible are shown live."];
+//define picker values
     
-    NSMutableArray *venues = [NSMutableArray arrayWithObjects:venue1, venue2, venue3, venue4, nil];
+    
     
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
 //    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
 //    controller.managedObjectContext = self.managedObjectContext;
     
-    MasterViewController *masterController = [navigationController.viewControllers objectAtIndex:0];
-    masterController.venues = venues;
+    SearchViewController *searchController = [navigationController.viewControllers objectAtIndex:0];
+    
+    searchController.textField.text = @"name";
+
+    
+   // MasterViewController *masterController = [navigationController.viewControllers objectAtIndex:0];
+   // masterController.venues = venues;
     
    return YES;
 }

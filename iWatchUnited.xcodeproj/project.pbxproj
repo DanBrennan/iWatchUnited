@@ -20,6 +20,7 @@
 		EC1BB43619DD7F860002493D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1BB43519DD7F860002493D /* libsqlite3.dylib */; };
 		EC1BB43919DD7FC10002493D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BB43819DD7FC10002493D /* DBManager.m */; };
 		EC1BB47719DD9E3E0002493D /* badge.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EC1BB47619DD9E3E0002493D /* badge.jpeg */; };
+		EC9A64FD19E0102B00C8D50B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A64FC19E0102B00C8D50B /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		EC1BB43719DD7FC10002493D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		EC1BB43819DD7FC10002493D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		EC1BB47619DD9E3E0002493D /* badge.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = badge.jpeg; sourceTree = "<group>"; };
+		EC9A64FB19E0102B00C8D50B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		EC9A64FC19E0102B00C8D50B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				EC13B04419DAFA930038C1A0 /* DetailViewController.h */,
 				EC13B04519DAFA930038C1A0 /* DetailViewController.m */,
 				EC13B04719DAFA930038C1A0 /* Main.storyboard */,
+				EC9A64FB19E0102B00C8D50B /* SearchViewController.h */,
+				EC9A64FC19E0102B00C8D50B /* SearchViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				EC13B04319DAFA930038C1A0 /* MasterViewController.m in Sources */,
 				EC13B04019DAFA930038C1A0 /* iWatchUnited.xcdatamodeld in Sources */,
 				EC13B03D19DAFA930038C1A0 /* AppDelegate.m in Sources */,
+				EC9A64FD19E0102B00C8D50B /* SearchViewController.m in Sources */,
 				EC13B03A19DAFA930038C1A0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
