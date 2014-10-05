@@ -17,6 +17,7 @@
 @implementation MasterViewController
 
 @synthesize venues = _venues;
+@synthesize myTitle = _myTitle;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -30,7 +31,9 @@
 //    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
 //    self.navigationItem.rightBarButtonItem = addButton;
     
-    self.title = @"Venues";
+  //  self.title = @"Venues";
+    
+    self.title = _myTitle;
     
     VenueDetails *venue1 = [[VenueDetails alloc] initWithVenueName:@"The Pub Next Door" phoneNumber:@"020891929219" address:@"12 Old Street, London, W1 4GF" email:@"admin@thepubnextdoor" website:@"thepubnextdoor.com" comments:@"If it's televised - it's on!"];
     VenueDetails *venue2 = [[VenueDetails alloc] initWithVenueName:@"Crest Hotel Sports Bar" phoneNumber:@"(02) 9358 2755 " address:@"111 Darlinghurst Road, Sydney 2011, Australia" email:@"" website:@"" comments:@""];
@@ -41,6 +44,8 @@
     
     id delegate = [[UIApplication sharedApplication] delegate];
     self.managedObjectContext = [delegate managedObjectContext];
+    
+    // Update the view.
     
     
 }

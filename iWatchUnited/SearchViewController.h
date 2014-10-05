@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController
+@interface SearchViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-
 @property (weak, nonatomic) IBOutlet UIButton *buttonDone;
+@property (weak, nonatomic) IBOutlet UIPickerView *countryPicker;
 
+
+- (IBAction)countryText:(UITextField *)sender;
 
 
 @end
