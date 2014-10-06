@@ -18,15 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHO-Pa-aHg">
-                                <rect key="frame" x="0.0" y="174" width="600" height="162"/>
+                                <rect key="frame" x="41" y="175" width="498" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KHO-Pa-aHg" secondAttribute="trailing" constant="45" id="1PU-s5-et2"/>
                             <constraint firstItem="KHO-Pa-aHg" firstAttribute="trailing" secondItem="Dyl-UZ-hpe" secondAttribute="trailing" id="GRN-js-5Nx"/>
+                            <constraint firstItem="KHO-Pa-aHg" firstAttribute="leading" secondItem="8nJ-CS-0Gf" secondAttribute="leadingMargin" constant="25" id="HDW-e8-ems"/>
                             <constraint firstItem="KHO-Pa-aHg" firstAttribute="leading" secondItem="Dyl-UZ-hpe" secondAttribute="leading" id="Mu2-cr-1r5"/>
-                            <constraint firstItem="KHO-Pa-aHg" firstAttribute="top" secondItem="Dyl-UZ-hpe" secondAttribute="bottom" constant="110" id="xkW-q8-uAl"/>
+                            <constraint firstItem="KHO-Pa-aHg" firstAttribute="top" secondItem="Dyl-UZ-hpe" secondAttribute="bottom" constant="111" id="OIi-6n-iDc"/>
+                            <constraint firstItem="KHO-Pa-aHg" firstAttribute="leading" secondItem="8nJ-CS-0Gf" secondAttribute="leadingMargin" constant="25" id="lkK-Ca-Vpp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KHO-Pa-aHg" secondAttribute="trailing" constant="45" id="zzd-bu-gSl"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GRN-js-5Nx"/>
+                                <exclude reference="Mu2-cr-1r5"/>
+                                <exclude reference="lkK-Ca-Vpp"/>
+                                <exclude reference="zzd-bu-gSl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="E73-WL-SnB">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Mbk-1s-MXD">
@@ -48,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxT-8w-xwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="352"/>
+            <point key="canvasLocation" x="999" y="143"/>
         </scene>
         <!--Master-->
         <scene sceneID="cUi-kZ-frf">
