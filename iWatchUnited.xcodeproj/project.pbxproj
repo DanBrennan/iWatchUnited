@@ -21,6 +21,7 @@
 		EC1BB43919DD7FC10002493D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BB43819DD7FC10002493D /* DBManager.m */; };
 		EC1BB47719DD9E3E0002493D /* badge.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EC1BB47619DD9E3E0002493D /* badge.jpeg */; };
 		EC9A64FD19E0102B00C8D50B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A64FC19E0102B00C8D50B /* SearchViewController.m */; };
+		EC9A653619E2EEE800C8D50B /* RNData.csv in Resources */ = {isa = PBXBuildFile; fileRef = EC9A653519E2EEE800C8D50B /* RNData.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EC1BB47619DD9E3E0002493D /* badge.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = badge.jpeg; sourceTree = "<group>"; };
 		EC9A64FB19E0102B00C8D50B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		EC9A64FC19E0102B00C8D50B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		EC9A653519E2EEE800C8D50B /* RNData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNData.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		EC13B03719DAFA930038C1A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC9A653519E2EEE800C8D50B /* RNData.csv */,
 				EC13B03819DAFA930038C1A0 /* Info.plist */,
 				EC13B03919DAFA930038C1A0 /* main.m */,
 			);
@@ -265,6 +268,7 @@
 			files = (
 				EC1BB47719DD9E3E0002493D /* badge.jpeg in Resources */,
 				EC13B04919DAFA930038C1A0 /* Main.storyboard in Resources */,
+				EC9A653619E2EEE800C8D50B /* RNData.csv in Resources */,
 				EC13B04E19DAFA930038C1A0 /* LaunchScreen.xib in Resources */,
 				EC13B04B19DAFA930038C1A0 /* Images.xcassets in Resources */,
 			);

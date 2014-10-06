@@ -20,14 +20,6 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KHO-Pa-aHg">
                                 <rect key="frame" x="0.0" y="394" width="600" height="162"/>
                             </pickerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rpA-xV-ytz">
-                                <rect key="frame" x="252" y="164" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="countryText:" destination="jfb-uw-fRH" eventType="touchUpInside" id="8Zn-L9-nM6"/>
-                                </connections>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -47,7 +39,6 @@
                     <connections>
                         <outlet property="buttonDone" destination="2LF-TT-hg4" id="as5-yf-TbD"/>
                         <outlet property="countryPicker" destination="KHO-Pa-aHg" id="elb-19-qEJ"/>
-                        <outlet property="textField" destination="rpA-xV-ytz" id="Yc1-Kd-9mV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxT-8w-xwR" userLabel="First Responder" sceneMemberID="firstResponder"/>

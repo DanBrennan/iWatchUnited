@@ -10,12 +10,11 @@
 
 @interface SearchViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIButton *buttonDone;
 @property (weak, nonatomic) IBOutlet UIPickerView *countryPicker;
+@property (weak, nonatomic) NSString *countryPickerValue;
 
 
-- (IBAction)countryText:(UITextField *)sender;
 
 
 @end

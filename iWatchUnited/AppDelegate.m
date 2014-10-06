@@ -34,8 +34,6 @@
     
     SearchViewController *searchController = [navigationController.viewControllers objectAtIndex:0];
     
-    searchController.textField.text = @"name";
-
     
    // MasterViewController *masterController = [navigationController.viewControllers objectAtIndex:0];
    // masterController.venues = venues;

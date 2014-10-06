@@ -22,6 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    _countryPickerData = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
+    
+    // Connect data
+    self.countryPicker.dataSource = self;
+    self.countryPicker.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +60,10 @@
 {
     // This method is triggered whenever the user makes a change to the picker selection.
     // The parameter named row and component represents what was selected.
+    
+    self.countryPickerValue = _countryPickerData[row];
+
+    
 }
 
 
@@ -69,24 +79,11 @@
         
         
         MasterViewController *destinationViewController = segue.destinationViewController;
-    destinationViewController.myTitle = self.textField.text;
+    destinationViewController.myTitle = self.countryPickerValue;
 
     //}
     
     
 }
 
-
-
-- (IBAction)countryText:(UITextField *)sender {
-    
-    self.countryPicker.hidden = NO;
-    _countryPickerData = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
-    
-    // Connect data
-    self.countryPicker.dataSource = self;
-    self.countryPicker.delegate = self;
-    
-    
-}
 @end
