@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _countryPickerData = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
+    _countryPickerData = @[@"Australia", @"Argentina", @"England", @"Germany", @"Venezuala", @"Zambia"];
     
     // Connect data
     self.countryPicker.dataSource = self;
