@@ -10,7 +10,7 @@
 		EC13B03A19DAFA930038C1A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC13B03919DAFA930038C1A0 /* main.m */; };
 		EC13B03D19DAFA930038C1A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC13B03C19DAFA930038C1A0 /* AppDelegate.m */; };
 		EC13B04019DAFA930038C1A0 /* iWatchUnited.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC13B03E19DAFA930038C1A0 /* iWatchUnited.xcdatamodeld */; };
-		EC13B04319DAFA930038C1A0 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC13B04219DAFA930038C1A0 /* MasterViewController.m */; };
+		EC13B04319DAFA930038C1A0 /* VenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC13B04219DAFA930038C1A0 /* VenueViewController.m */; };
 		EC13B04619DAFA930038C1A0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC13B04519DAFA930038C1A0 /* DetailViewController.m */; };
 		EC13B04919DAFA930038C1A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC13B04719DAFA930038C1A0 /* Main.storyboard */; };
 		EC13B04B19DAFA930038C1A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC13B04A19DAFA930038C1A0 /* Images.xcassets */; };
@@ -20,6 +20,8 @@
 		EC1BB43619DD7F860002493D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1BB43519DD7F860002493D /* libsqlite3.dylib */; };
 		EC1BB43919DD7FC10002493D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BB43819DD7FC10002493D /* DBManager.m */; };
 		EC1BB47719DD9E3E0002493D /* badge.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EC1BB47619DD9E3E0002493D /* badge.jpeg */; };
+		EC2CC7BD19E32D130094EF2E /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2CC7BB19E32D130094EF2E /* CityViewController.m */; };
+		EC2CC7BE19E32D130094EF2E /* CityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2CC7BC19E32D130094EF2E /* CityViewController.xib */; };
 		EC9A64FD19E0102B00C8D50B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A64FC19E0102B00C8D50B /* SearchViewController.m */; };
 		EC9A653619E2EEE800C8D50B /* RNData.csv in Resources */ = {isa = PBXBuildFile; fileRef = EC9A653519E2EEE800C8D50B /* RNData.csv */; };
 /* End PBXBuildFile section */
@@ -41,8 +43,8 @@
 		EC13B03B19DAFA930038C1A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC13B03C19DAFA930038C1A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EC13B03F19DAFA930038C1A0 /* iWatchUnited.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iWatchUnited.xcdatamodel; sourceTree = "<group>"; };
-		EC13B04119DAFA930038C1A0 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		EC13B04219DAFA930038C1A0 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		EC13B04119DAFA930038C1A0 /* VenueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VenueViewController.h; sourceTree = "<group>"; };
+		EC13B04219DAFA930038C1A0 /* VenueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenueViewController.m; sourceTree = "<group>"; };
 		EC13B04419DAFA930038C1A0 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		EC13B04519DAFA930038C1A0 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		EC13B04819DAFA930038C1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,9 @@
 		EC1BB43719DD7FC10002493D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		EC1BB43819DD7FC10002493D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		EC1BB47619DD9E3E0002493D /* badge.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = badge.jpeg; sourceTree = "<group>"; };
+		EC2CC7BA19E32D130094EF2E /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		EC2CC7BB19E32D130094EF2E /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		EC2CC7BC19E32D130094EF2E /* CityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityViewController.xib; sourceTree = "<group>"; };
 		EC9A64FB19E0102B00C8D50B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		EC9A64FC19E0102B00C8D50B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		EC9A653519E2EEE800C8D50B /* RNData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNData.csv; sourceTree = "<group>"; };
@@ -147,13 +152,16 @@
 				EC13B03E19DAFA930038C1A0 /* iWatchUnited.xcdatamodeld */,
 				EC13B03B19DAFA930038C1A0 /* AppDelegate.h */,
 				EC13B03C19DAFA930038C1A0 /* AppDelegate.m */,
-				EC13B04119DAFA930038C1A0 /* MasterViewController.h */,
-				EC13B04219DAFA930038C1A0 /* MasterViewController.m */,
+				EC13B04119DAFA930038C1A0 /* VenueViewController.h */,
+				EC13B04219DAFA930038C1A0 /* VenueViewController.m */,
 				EC13B04419DAFA930038C1A0 /* DetailViewController.h */,
 				EC13B04519DAFA930038C1A0 /* DetailViewController.m */,
 				EC13B04719DAFA930038C1A0 /* Main.storyboard */,
 				EC9A64FB19E0102B00C8D50B /* SearchViewController.h */,
 				EC9A64FC19E0102B00C8D50B /* SearchViewController.m */,
+				EC2CC7BA19E32D130094EF2E /* CityViewController.h */,
+				EC2CC7BB19E32D130094EF2E /* CityViewController.m */,
+				EC2CC7BC19E32D130094EF2E /* CityViewController.xib */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -269,6 +277,7 @@
 				EC1BB47719DD9E3E0002493D /* badge.jpeg in Resources */,
 				EC13B04919DAFA930038C1A0 /* Main.storyboard in Resources */,
 				EC9A653619E2EEE800C8D50B /* RNData.csv in Resources */,
+				EC2CC7BE19E32D130094EF2E /* CityViewController.xib in Resources */,
 				EC13B04E19DAFA930038C1A0 /* LaunchScreen.xib in Resources */,
 				EC13B04B19DAFA930038C1A0 /* Images.xcassets in Resources */,
 			);
@@ -291,9 +300,10 @@
 				EC1BB43919DD7FC10002493D /* DBManager.m in Sources */,
 				EC13B06819DAFC310038C1A0 /* VenueDetails.m in Sources */,
 				EC13B04619DAFA930038C1A0 /* DetailViewController.m in Sources */,
-				EC13B04319DAFA930038C1A0 /* MasterViewController.m in Sources */,
+				EC13B04319DAFA930038C1A0 /* VenueViewController.m in Sources */,
 				EC13B04019DAFA930038C1A0 /* iWatchUnited.xcdatamodeld in Sources */,
 				EC13B03D19DAFA930038C1A0 /* AppDelegate.m in Sources */,
+				EC2CC7BD19E32D130094EF2E /* CityViewController.m in Sources */,
 				EC9A64FD19E0102B00C8D50B /* SearchViewController.m in Sources */,
 				EC13B03A19DAFA930038C1A0 /* main.m in Sources */,
 			);

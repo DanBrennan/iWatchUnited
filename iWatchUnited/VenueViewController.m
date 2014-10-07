@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Daniel Brennan. All rights reserved.
 //
 
-#import "MasterViewController.h"
+#import "VenueViewController.h"
 #import "DetailViewController.h"
 #import "VenueDetails.h"
 
-@interface MasterViewController ()
+@interface VenueViewController ()
 
 @end
 
-@implementation MasterViewController
+@implementation VenueViewController
 
 @synthesize venues = _venues;
 @synthesize myTitle = _myTitle;
@@ -155,7 +155,7 @@
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Venues"];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     

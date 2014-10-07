@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
-#import "MasterViewController.h"
+#import "VenueViewController.h"
 #import "VenueDetails.h"
 #import "SearchViewController.h"
 

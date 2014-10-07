@@ -7,7 +7,7 @@
 //
 
 #import "SearchViewController.h"
-#import "MasterViewController.h"
+#import "CityViewController.h"
 
 @interface SearchViewController ()
 
@@ -78,8 +78,8 @@
       //  NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         
-        MasterViewController *destinationViewController = segue.destinationViewController;
-    destinationViewController.myTitle = self.countryPickerValue;
+        CityViewController *destinationViewController = segue.destinationViewController;
+        destinationViewController.myTitle = self.countryPickerValue;
 
     //}
     
