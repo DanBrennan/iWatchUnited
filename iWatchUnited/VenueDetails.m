@@ -10,12 +10,14 @@
 
 @implementation VenueDetails
 
-- (id)initWithVenueName:(NSString*)venueName phoneNumber:(NSString*)phoneNumber
-                address:(NSString*)address email:(NSString*)email
-                website:(NSString*)website comments:(NSString*)comments{
-    
+- (id)initWithCountryName:(NSString*)country city:(NSString*)city venueName:(NSString*)venueName
+              phoneNumber:(NSString*)phoneNumber
+                  address:(NSString*)address email:(NSString*)email
+                  website:(NSString*)website comments:(NSString*)comments{
     
     if ((self = [super init])) {
+        self.country = country;
+        self.city = city;
         self.venueName = venueName;
         self.phoneNumber = phoneNumber;
         self.address = address;
@@ -25,7 +27,10 @@
     }
     
     return self;
+    
 }
+
+
 
 
 @end

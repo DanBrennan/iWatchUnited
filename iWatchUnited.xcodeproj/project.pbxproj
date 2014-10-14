@@ -23,7 +23,9 @@
 		EC2CC7BD19E32D130094EF2E /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2CC7BB19E32D130094EF2E /* CityViewController.m */; };
 		EC2CC7BE19E32D130094EF2E /* CityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2CC7BC19E32D130094EF2E /* CityViewController.xib */; };
 		EC9A64FD19E0102B00C8D50B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A64FC19E0102B00C8D50B /* SearchViewController.m */; };
-		EC9A653619E2EEE800C8D50B /* RNData.csv in Resources */ = {isa = PBXBuildFile; fileRef = EC9A653519E2EEE800C8D50B /* RNData.csv */; };
+		ECA0640319ED5861006430F0 /* iWatchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640219ED5861006430F0 /* iWatchIcon.png */; };
+		ECA0640519ED736F006430F0 /* RNData.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640419ED736F006430F0 /* RNData.txt */; };
+		ECA0640719ED7824006430F0 /* RNDataUTF8.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640619ED7824006430F0 /* RNDataUTF8.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +66,9 @@
 		EC2CC7BC19E32D130094EF2E /* CityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityViewController.xib; sourceTree = "<group>"; };
 		EC9A64FB19E0102B00C8D50B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		EC9A64FC19E0102B00C8D50B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		EC9A653519E2EEE800C8D50B /* RNData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNData.csv; sourceTree = "<group>"; };
+		ECA0640219ED5861006430F0 /* iWatchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iWatchIcon.png; sourceTree = "<group>"; };
+		ECA0640419ED736F006430F0 /* RNData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNData.txt; sourceTree = "<group>"; };
+		ECA0640619ED7824006430F0 /* RNDataUTF8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNDataUTF8.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +125,8 @@
 		EC13B03719DAFA930038C1A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC9A653519E2EEE800C8D50B /* RNData.csv */,
+				ECA0640619ED7824006430F0 /* RNDataUTF8.txt */,
+				ECA0640419ED736F006430F0 /* RNData.txt */,
 				EC13B03819DAFA930038C1A0 /* Info.plist */,
 				EC13B03919DAFA930038C1A0 /* main.m */,
 			);
@@ -169,6 +174,7 @@
 		EC13B06419DAFBF40038C1A0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ECA0640219ED5861006430F0 /* iWatchIcon.png */,
 				EC1BB47619DD9E3E0002493D /* badge.jpeg */,
 			);
 			name = Images;
@@ -276,10 +282,12 @@
 			files = (
 				EC1BB47719DD9E3E0002493D /* badge.jpeg in Resources */,
 				EC13B04919DAFA930038C1A0 /* Main.storyboard in Resources */,
-				EC9A653619E2EEE800C8D50B /* RNData.csv in Resources */,
+				ECA0640519ED736F006430F0 /* RNData.txt in Resources */,
 				EC2CC7BE19E32D130094EF2E /* CityViewController.xib in Resources */,
 				EC13B04E19DAFA930038C1A0 /* LaunchScreen.xib in Resources */,
+				ECA0640719ED7824006430F0 /* RNDataUTF8.txt in Resources */,
 				EC13B04B19DAFA930038C1A0 /* Images.xcassets in Resources */,
+				ECA0640319ED5861006430F0 /* iWatchIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

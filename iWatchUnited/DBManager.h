@@ -10,4 +10,9 @@
 
 @interface DBManager : NSObject
 
+@property (nonatomic) NSMutableArray *venues;
+
+//make this a + to manage memory?
+-(NSMutableArray *)getVenueData;
+
 @end

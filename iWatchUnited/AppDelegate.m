@@ -11,6 +11,7 @@
 #import "VenueViewController.h"
 #import "VenueDetails.h"
 #import "SearchViewController.h"
+#import "DBManager.h"
 
 @interface AppDelegate ()
 
@@ -18,12 +19,25 @@
 
 @implementation AppDelegate
 
+@synthesize venues = _venues;
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
     
 //define picker values
+    
+    //Read csv file here and load into VenueDetails mutablearray
+    
+   // DBManager *dbManager = [DBManager alloc];
+    
+    
+    
+     self.venues = [[DBManager alloc] getVenueData];
+
+    
+    NSLog(@"venues: %@", self.venues);
     
     
     

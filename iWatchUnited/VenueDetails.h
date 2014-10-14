@@ -10,6 +10,8 @@
 
 @interface VenueDetails : NSObject
 
+@property NSString *country;
+@property NSString *city;
 @property NSString *venueName;
 @property NSString *phoneNumber;
 @property NSString *address;
@@ -17,7 +19,8 @@
 @property NSString *website;
 @property NSString *comments;
 
-- (id)initWithVenueName:(NSString*)venueName phoneNumber:(NSString*)phoneNumber
+- (id)initWithCountryName:(NSString*)country city:(NSString*)city venueName:(NSString*)venueName
+        phoneNumber:(NSString*)phoneNumber
         address:(NSString*)address email:(NSString*)email
         website:(NSString*)website comments:(NSString*)comments;
 
