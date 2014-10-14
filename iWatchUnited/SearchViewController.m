@@ -8,12 +8,16 @@
 
 #import "SearchViewController.h"
 #import "CityViewController.h"
+#import "VenueDetails.h"
 
 @interface SearchViewController ()
 
-{
-    NSArray *_countryPickerData;
-}
+//{
+//    NSMutableArray *_countryPickerData;
+//}
+
+
+@property NSMutableArray *countryPickerData;
 
 @end
 
@@ -23,9 +27,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //for loop to iterate through self.venues
+    //add countries to picker array if they dont already exist in there
     
+    VenueDetails *x = [[VenueDetails alloc] init];
+   
+    self.countryPickerData = [[NSMutableArray alloc] init];
     
-    _countryPickerData = @[@"Australia", @"Argentina", @"England", @"Germany", @"Venezuala", @"Zambia"];
+    for (int i = 0; i < self.venues.count; i++)
+    {
+       x  = self.venues[i];
+        
+        if (![self.countryPickerData containsObject:x.country]){
+            [self.countryPickerData addObject:x.country];
+        }        
+    }
+
     
     // Connect data
     self.countryPicker.dataSource = self;
@@ -48,7 +65,7 @@
 // The number of rows of data
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return _countryPickerData.count;
+    return self.countryPickerData.count;
 }
 
 // The data to return for the row and component (column) that's being passed in
@@ -56,7 +73,7 @@
 {
     
     
-    return _countryPickerData[row];
+    return self.countryPickerData[row];
 }
 
 // Catpure the picker view selection
@@ -65,7 +82,7 @@
     // This method is triggered whenever the user makes a change to the picker selection.
     // The parameter named row and component represents what was selected.
     
-    self.countryPickerValue = _countryPickerData[row];
+    self.countryPickerValue = self.countryPickerData[row];
 
     
 }

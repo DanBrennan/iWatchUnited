@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonDone;
 @property (weak, nonatomic) IBOutlet UIPickerView *countryPicker;
 @property (weak, nonatomic) NSString *countryPickerValue;
+@property (weak, nonatomic) NSMutableArray *venues;
 
 
 

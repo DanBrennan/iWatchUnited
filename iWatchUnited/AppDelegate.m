@@ -37,7 +37,7 @@
      self.venues = [[DBManager alloc] getVenueData];
 
     
-    NSLog(@"venues: %@", self.venues);
+   // NSLog(@"venues: %@", self.venues);
     
     
     
@@ -47,10 +47,7 @@
 //    controller.managedObjectContext = self.managedObjectContext;
     
     SearchViewController *searchController = [navigationController.viewControllers objectAtIndex:0];
-    
-    
-   // MasterViewController *masterController = [navigationController.viewControllers objectAtIndex:0];
-   // masterController.venues = venues;
+    searchController.venues = self.venues;
     
    return YES;
 }
