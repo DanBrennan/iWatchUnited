@@ -21,6 +21,11 @@
         _detailItem = newDetailItem;
         
         self.title = _detailItem.venueName;
+        
+//        UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"badge.jpeg"]];
+//        [self.view addSubview:backgroundView];
+//        
+        
             
         // Update the view.
         [self configureView];

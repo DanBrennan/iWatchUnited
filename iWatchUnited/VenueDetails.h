@@ -18,11 +18,12 @@
 @property NSString *email;
 @property NSString *website;
 @property NSString *comments;
+@property NSString *redbar;
 
 - (id)initWithCountryName:(NSString*)country city:(NSString*)city venueName:(NSString*)venueName
         phoneNumber:(NSString*)phoneNumber
         address:(NSString*)address email:(NSString*)email
-        website:(NSString*)website comments:(NSString*)comments;
+        website:(NSString*)website comments:(NSString*)comments redbar:(NSString*)redbar;
 
 
 @end

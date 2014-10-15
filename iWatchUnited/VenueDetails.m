@@ -13,7 +13,7 @@
 - (id)initWithCountryName:(NSString*)country city:(NSString*)city venueName:(NSString*)venueName
               phoneNumber:(NSString*)phoneNumber
                   address:(NSString*)address email:(NSString*)email
-                  website:(NSString*)website comments:(NSString*)comments{
+                  website:(NSString*)website comments:(NSString*)comments redbar:(NSString*)redbar{
     
     if ((self = [super init])) {
         self.country = country;
@@ -24,6 +24,7 @@
         self.email = email;
         self.website = website;
         self.comments = comments;
+        self.redbar = redbar;
     }
     
     return self;

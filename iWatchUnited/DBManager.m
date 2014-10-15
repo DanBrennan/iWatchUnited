@@ -32,7 +32,7 @@
     for (NSString *row in rows){
         NSArray* columns = [row componentsSeparatedByString:@","];
         
-        [_venues addObject:[[VenueDetails alloc] initWithCountryName:columns[0] city:columns[1] venueName:columns[2] phoneNumber:columns[4] address:columns[3] email:columns[5] website:columns[6] comments:columns[7]]];
+        [_venues addObject:[[VenueDetails alloc] initWithCountryName:columns[0] city:columns[1] venueName:columns[2] phoneNumber:columns[4] address:columns[3] email:columns[5] website:columns[6] comments:columns[7] redbar:columns[8]]];
     
     }
 

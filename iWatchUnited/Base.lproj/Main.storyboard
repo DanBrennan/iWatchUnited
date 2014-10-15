@@ -17,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YU2-5e-j50">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YU2-5e-j50">
                                 <rect key="frame" x="238" y="121" width="124" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="L0Y-Km-vjv"/>
+                                    <constraint firstAttribute="height" constant="59" id="m8n-xw-hoJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.14608379069999999" blue="0.15386665930000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -28,16 +32,16 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KHO-Pa-aHg" firstAttribute="leading" secondItem="8nJ-CS-0Gf" secondAttribute="leadingMargin" constant="35" id="5IF-un-j7A"/>
-                            <constraint firstItem="KHO-Pa-aHg" firstAttribute="top" secondItem="YU2-5e-j50" secondAttribute="bottom" constant="77" id="DOS-zM-kvc"/>
+                            <constraint firstItem="YU2-5e-j50" firstAttribute="centerX" secondItem="KHO-Pa-aHg" secondAttribute="centerX" id="BpN-cM-Gcr"/>
                             <constraint firstItem="KHO-Pa-aHg" firstAttribute="centerX" secondItem="8nJ-CS-0Gf" secondAttribute="centerX" id="EFC-Nb-YK0"/>
                             <constraint firstItem="KHO-Pa-aHg" firstAttribute="trailing" secondItem="Dyl-UZ-hpe" secondAttribute="trailing" id="GRN-js-5Nx"/>
                             <constraint firstItem="KHO-Pa-aHg" firstAttribute="leading" secondItem="Dyl-UZ-hpe" secondAttribute="leading" id="Mu2-cr-1r5"/>
                             <constraint firstItem="KHO-Pa-aHg" firstAttribute="centerY" secondItem="8nJ-CS-0Gf" secondAttribute="centerY" id="WEz-1m-exc"/>
-                            <constraint firstItem="KHO-Pa-aHg" firstAttribute="centerX" secondItem="YU2-5e-j50" secondAttribute="centerX" id="gHY-HN-a9O"/>
+                            <constraint firstItem="KHO-Pa-aHg" firstAttribute="top" secondItem="YU2-5e-j50" secondAttribute="bottom" constant="39" id="czg-UT-x6m"/>
                             <constraint firstItem="KHO-Pa-aHg" firstAttribute="leading" secondItem="8nJ-CS-0Gf" secondAttribute="leadingMargin" constant="25" id="lkK-Ca-Vpp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KHO-Pa-aHg" secondAttribute="trailing" constant="45" id="zzd-bu-gSl"/>
                         </constraints>
@@ -135,16 +139,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="xxX-if-bPB" style="IBUITableViewCellStyleDefault" id="m0d-ak-lc9">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="eeA-Dx-Uiz" detailTextLabel="93H-Z0-Nfz" style="IBUITableViewCellStyleSubtitle" id="m0d-ak-lc9">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0d-ak-lc9" id="d3P-M7-ByW">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xxX-if-bPB">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eeA-Dx-Uiz">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="93H-Z0-Nfz">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -186,7 +196,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="1ZE-lp-HIy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PNJ-Yw-5od">

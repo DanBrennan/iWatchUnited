@@ -26,6 +26,8 @@
 		ECA0640319ED5861006430F0 /* iWatchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640219ED5861006430F0 /* iWatchIcon.png */; };
 		ECA0640519ED736F006430F0 /* RNData.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640419ED736F006430F0 /* RNData.txt */; };
 		ECA0640719ED7824006430F0 /* RNDataUTF8.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640619ED7824006430F0 /* RNDataUTF8.txt */; };
+		ECA0640919EEC120006430F0 /* recommended.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640819EEC120006430F0 /* recommended.jpeg */; };
+		ECA0640B19EEE0E6006430F0 /* redstar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640A19EEE0E6006430F0 /* redstar.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		ECA0640219ED5861006430F0 /* iWatchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iWatchIcon.png; sourceTree = "<group>"; };
 		ECA0640419ED736F006430F0 /* RNData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNData.txt; sourceTree = "<group>"; };
 		ECA0640619ED7824006430F0 /* RNDataUTF8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNDataUTF8.txt; sourceTree = "<group>"; };
+		ECA0640819EEC120006430F0 /* recommended.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recommended.jpeg; sourceTree = "<group>"; };
+		ECA0640A19EEE0E6006430F0 /* redstar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redstar.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,8 @@
 		EC13B06419DAFBF40038C1A0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ECA0640A19EEE0E6006430F0 /* redstar.jpeg */,
+				ECA0640819EEC120006430F0 /* recommended.jpeg */,
 				ECA0640219ED5861006430F0 /* iWatchIcon.png */,
 				EC1BB47619DD9E3E0002493D /* badge.jpeg */,
 			);
@@ -281,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1BB47719DD9E3E0002493D /* badge.jpeg in Resources */,
+				ECA0640B19EEE0E6006430F0 /* redstar.jpeg in Resources */,
+				ECA0640919EEC120006430F0 /* recommended.jpeg in Resources */,
 				EC13B04919DAFA930038C1A0 /* Main.storyboard in Resources */,
 				ECA0640519ED736F006430F0 /* RNData.txt in Resources */,
 				EC2CC7BE19E32D130094EF2E /* CityViewController.xib in Resources */,

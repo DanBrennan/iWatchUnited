@@ -77,7 +77,7 @@
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -215,14 +215,19 @@
         venue  = self.venues[i];
         
         if ([venue.city isEqualToString:[self.cities objectAtIndex:self.tableView.indexPathForSelectedRow.row]]) {
-            NSLog(@"add venue: %@", venue);
             [cityVenues addObject:venue];
         }
         
     }
     
+    NSSortDescriptor *sortDescriptor;
+    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"redbar"
+                                                 ascending:NO];
+    NSMutableArray *sortDescriptors = [NSMutableArray arrayWithObject:sortDescriptor];
+    NSMutableArray *sortedArray;
+    sortedArray = [cityVenues sortedArrayUsingDescriptors:sortDescriptors];
     
-    destinationViewController.venues = cityVenues;
+    destinationViewController.venues = sortedArray;
     
     
     

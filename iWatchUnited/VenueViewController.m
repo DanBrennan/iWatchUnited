@@ -96,6 +96,16 @@
     VenueDetails *venue = [self.venues objectAtIndex:indexPath.row];
     
     cell.textLabel.text = venue.venueName;
+    cell.detailTextLabel.text = venue.country;
+
+    
+    if ([venue.redbar containsString:@"y"]) {
+        cell.imageView.image = [UIImage imageNamed:@"redstar.jpeg"];
+    }
+    else{
+        cell.imageView.image = [UIImage imageNamed:@"iWatchIcon.png"];
+
+    }
     
     if ([cell.textLabel.text  isEqual: @"Elephant & Wheelbarrow"]) {
         cell.textLabel.textColor = [UIColor redColor];
@@ -107,7 +117,7 @@
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
