@@ -12,11 +12,6 @@
 
 @interface SearchViewController ()
 
-//{
-//    NSMutableArray *_countryPickerData;
-//}
-
-
 @property NSMutableArray *countryPickerData;
 
 @end
@@ -30,17 +25,17 @@
     //for loop to iterate through self.venues
     //add countries to picker array if they dont already exist in there
     
-    VenueDetails *x = [[VenueDetails alloc] init];
+    VenueDetails *venue = [[VenueDetails alloc] init];
    
     self.countryPickerData = [[NSMutableArray alloc] init];
     
     for (int i = 0; i < self.venues.count; i++)
     {
-       x  = self.venues[i];
+       venue  = self.venues[i];
         
-        if (![self.countryPickerData containsObject:x.country]){
-            [self.countryPickerData addObject:x.country];
-        }        
+        if (![self.countryPickerData containsObject:venue.country]){
+            [self.countryPickerData addObject:venue.country];
+        }
     }
 
     
@@ -97,10 +92,11 @@
     // Pass the selected object to the new view controller.
    //if ([segue.identifier isEqualToString:@"searchCriteriaSegue"]) {
       //  NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        
-        
+    
         CityViewController *destinationViewController = segue.destinationViewController;
         destinationViewController.myTitle = self.countryPickerValue;
+    
+        destinationViewController.venues = self.venues;
 
     //}
     

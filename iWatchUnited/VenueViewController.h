@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (strong) NSMutableArray *venues;
+@property (strong, nonatomic) NSMutableArray *venues;
 @property (strong, nonatomic) NSString *myTitle;
 
 

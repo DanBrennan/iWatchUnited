@@ -9,10 +9,10 @@
 #import "VenueViewController.h"
 #import "DetailViewController.h"
 #import "VenueDetails.h"
-#import "DBManager.h"
 
 
 @interface VenueViewController ()
+
 
 @end
 
@@ -34,12 +34,7 @@
 //    self.navigationItem.rightBarButtonItem = addButton;
     
     self.title = _myTitle;
-    
-    DBManager *dbManager = [DBManager alloc];
-    
-    _venues = dbManager.getVenueData;
-    
-    NSLog(@"venues: %@", _venues);
+    self.venues = _venues;
     
     id delegate = [[UIApplication sharedApplication] delegate];
     self.managedObjectContext = [delegate managedObjectContext];
@@ -91,7 +86,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return _venues.count;
+    return self.venues.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

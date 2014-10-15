@@ -8,16 +8,17 @@
 
 #import "CityViewController.h"
 #import "VenueViewController.h"
+#import "VenueDetails.h"
 
 @interface CityViewController ()
 
-
+@property NSMutableArray *cities;
 
 @end
 
 @implementation CityViewController
 
-@synthesize cities = _cities;
+//@synthesize cities = _cities;
 @synthesize myTitle = _myTitle;
 
 - (void)viewDidLoad {
@@ -25,7 +26,22 @@
     // Do any additional setup after loading the view from its nib.
     self.title = _myTitle;
     
-    _cities = [NSMutableArray arrayWithObjects:@"London", @"Leeds", @"Berlin", @"Glasgow", @"Buenos Aries", nil];
+    
+    VenueDetails *venue = [[VenueDetails alloc] init];
+    
+    self.cities = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < self.venues.count; i++)
+    {
+        venue  = self.venues[i];
+        
+        if ([venue.country isEqualToString:self.myTitle] &&
+            ![self.cities containsObject:venue.city]) {
+            
+            [self.cities addObject:venue.city];
+        }
+        
+    }
     
     id delegate = [[UIApplication sharedApplication] delegate];
     self.managedObjectContext = [delegate managedObjectContext];
@@ -188,6 +204,28 @@
     
     VenueViewController *destinationViewController = segue.destinationViewController;
     destinationViewController.myTitle = [self.cities objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    
+    
+    VenueDetails *venue = [[VenueDetails alloc] init];
+    
+    NSMutableArray *cityVenues = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < self.venues.count; i++)
+    {
+        venue  = self.venues[i];
+        
+        if ([venue.city isEqualToString:[self.cities objectAtIndex:self.tableView.indexPathForSelectedRow.row]]) {
+            NSLog(@"add venue: %@", venue);
+            [cityVenues addObject:venue];
+        }
+        
+    }
+    
+    
+    destinationViewController.venues = cityVenues;
+    
+    
+    
 }
 
 

@@ -26,18 +26,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
     
-//define picker values
-    
     //Read csv file here and load into VenueDetails mutablearray
-    
-   // DBManager *dbManager = [DBManager alloc];
-    
-    
-    
-     self.venues = [[DBManager alloc] getVenueData];
-
-    
-   // NSLog(@"venues: %@", self.venues);
+    self.venues = [[DBManager alloc] getVenueData];
     
     
     
