@@ -13,15 +13,12 @@
 
 @property (strong, nonatomic) VenueDetails *detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *venueNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *phoneNumberLabel;
-
-
-
-@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
-@property (weak, nonatomic) IBOutlet UILabel *websiteLabel;
 @property (weak, nonatomic) IBOutlet UILabel *commentsLabel;
+@property (weak, nonatomic) IBOutlet UITextView *websiteTextView;
+@property (weak, nonatomic) IBOutlet UITextView *addressTextView;
 
+@property (weak, nonatomic) IBOutlet UITextView *phoneNumberTextView;
 
 @end
 

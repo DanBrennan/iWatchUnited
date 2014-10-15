@@ -31,11 +31,19 @@
     // Update the user interface for the detail item.
     if (self.detailItem) {
         self.venueNameLabel.text = _detailItem.venueName;
-        self.phoneNumberLabel.text = _detailItem.phoneNumber;
-        self.addressLabel.text = _detailItem.address;
+        self.addressTextView.text = _detailItem.address;
         self.emailLabel.text = _detailItem.email;
-        self.websiteLabel.text = _detailItem.website;
         self.commentsLabel.text = _detailItem.comments;
+        
+//        self.websiteTextView.editable = NO;
+//        self.websiteTextView.dataDetectorTypes = UIDataDetectorTypeLink;
+       self.websiteTextView.text = _detailItem.website;
+
+        
+        
+//        self.phoneNumberTextView.editable = NO;
+//        self.phoneNumberTextView.dataDetectorTypes = UIDataDetectorTypePhoneNumber;
+        self.phoneNumberTextView.text = _detailItem.phoneNumber;
 
     }
 }
