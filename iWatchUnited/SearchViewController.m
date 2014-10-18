@@ -10,8 +10,12 @@
 #import "CityViewController.h"
 #import "VenueDetails.h"
 
-@interface SearchViewController ()
 
+@interface SearchViewController ()
+{
+    BOOL _bannerIsVisible;
+    ADBannerView *_adBanner;
+}
 @property NSMutableArray *countryPickerData;
 
 @end
@@ -38,15 +42,11 @@
         }
     }
 
-    
     // Connect data
     self.countryPicker.dataSource = self;
     self.countryPicker.delegate = self;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    
 }
 
 #pragma mark - Picker
@@ -67,7 +67,6 @@
 - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     
-    
     return self.countryPickerData[row];
 }
 
@@ -77,10 +76,32 @@
     // This method is triggered whenever the user makes a change to the picker selection.
     // The parameter named row and component represents what was selected.
     
+    
     self.countryPickerValue = self.countryPickerData[row];
 
     
 }
+
+//-(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
+//{
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, pickerView.frame.size.width, 44)];
+//  //  label.backgroundColor = [UIColor lightGrayColor];
+//    label.textColor = [UIColor blackColor];
+//    label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:18];
+//   // label.text = [NSString stringWithFormat:@"  %d", row+1];
+//    return label;
+//}
+
+//- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+//    UILabel* tView = (UILabel*)view;
+//    if (!tView){
+//        tView = [[UILabel alloc] init];
+//        tview.
+//    }
+//    // Fill the label text here
+//
+//    return tView;
+//}
 
 
 
@@ -102,5 +123,56 @@
     
     
 }
+
+#pragma mark - iAds
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    _adBanner = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
+    _adBanner.delegate = self;
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    if (!_bannerIsVisible)
+    {
+        // If banner isn't part of view hierarchy, add it
+        if (_adBanner.superview == nil)
+        {
+            [self.view addSubview:_adBanner];
+        }
+        
+        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+        
+        // Assumes the banner view is just off the bottom of the screen.
+        banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+        
+        [UIView commitAnimations];
+        
+        _bannerIsVisible = YES;
+    }
+}
+
+
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    NSLog(@"Failed to retrieve ad");
+    
+    if (_bannerIsVisible)
+    {
+        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+        
+        // Assumes the banner view is placed at the bottom of the screen.
+        banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
+        
+        [UIView commitAnimations];
+        
+        _bannerIsVisible = NO;
+    }
+}
+
 
 @end

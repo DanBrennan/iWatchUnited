@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface SearchViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface SearchViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate, ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonDone;
-@property (weak, nonatomic) IBOutlet UIPickerView *countryPicker;
 @property (weak, nonatomic) NSString *countryPickerValue;
 @property (weak, nonatomic) NSMutableArray *venues;
 
+@property (weak, nonatomic) IBOutlet UIPickerView *countryPicker;
 
 
 

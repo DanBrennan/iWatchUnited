@@ -28,6 +28,8 @@
 		ECA0640719ED7824006430F0 /* RNDataUTF8.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640619ED7824006430F0 /* RNDataUTF8.txt */; };
 		ECA0640919EEC120006430F0 /* recommended.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640819EEC120006430F0 /* recommended.jpeg */; };
 		ECA0640B19EEE0E6006430F0 /* redstar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ECA0640A19EEE0E6006430F0 /* redstar.jpeg */; };
+		ECA0644C19F2CEC4006430F0 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECA0644B19F2CEC4006430F0 /* earth.jpg */; };
+		ECA0645019F2D65D006430F0 /* earth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ECA0644F19F2D65D006430F0 /* earth.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		ECA0640619ED7824006430F0 /* RNDataUTF8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNDataUTF8.txt; sourceTree = "<group>"; };
 		ECA0640819EEC120006430F0 /* recommended.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recommended.jpeg; sourceTree = "<group>"; };
 		ECA0640A19EEE0E6006430F0 /* redstar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redstar.jpeg; sourceTree = "<group>"; };
+		ECA0644B19F2CEC4006430F0 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		ECA0644F19F2D65D006430F0 /* earth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				ECA0640A19EEE0E6006430F0 /* redstar.jpeg */,
+				ECA0644F19F2D65D006430F0 /* earth.jpeg */,
+				ECA0644B19F2CEC4006430F0 /* earth.jpg */,
 				ECA0640819EEC120006430F0 /* recommended.jpeg */,
 				ECA0640219ED5861006430F0 /* iWatchIcon.png */,
 				EC1BB47619DD9E3E0002493D /* badge.jpeg */,
@@ -286,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA0644C19F2CEC4006430F0 /* earth.jpg in Resources */,
 				EC1BB47719DD9E3E0002493D /* badge.jpeg in Resources */,
 				ECA0640B19EEE0E6006430F0 /* redstar.jpeg in Resources */,
 				ECA0640919EEC120006430F0 /* recommended.jpeg in Resources */,
@@ -295,6 +302,7 @@
 				EC13B04E19DAFA930038C1A0 /* LaunchScreen.xib in Resources */,
 				ECA0640719ED7824006430F0 /* RNDataUTF8.txt in Resources */,
 				EC13B04B19DAFA930038C1A0 /* Images.xcassets in Resources */,
+				ECA0645019F2D65D006430F0 /* earth.jpeg in Resources */,
 				ECA0640319ED5861006430F0 /* iWatchIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

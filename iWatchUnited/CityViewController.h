@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <iAd/iAd.h>
 
-@interface CityViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface CityViewController : UITableViewController <NSFetchedResultsControllerDelegate, ADBannerViewDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

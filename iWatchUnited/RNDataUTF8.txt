@@ -1,4 +1,3 @@
-country,city,bar,address,phone,email ,website,remarks,redbar
 Afghanistan,Kabul,Serena Hotel,Froshgah Street  Kabul City,93-799654000,,,,n
 Afghanistan,Kabul,Sizzlers Restaurant,Liege Street  Kabul,,,,Sat TV,n
 Albania,Tirana,Cheers,Rr. PjetÎr Bogdani 39/1,,,,,n

@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "VenueDetails.h"
+#import <iAd/iAd.h>
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <ADBannerViewDelegate>
 
 @property (strong, nonatomic) VenueDetails *detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *venueNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
-@property (weak, nonatomic) IBOutlet UILabel *commentsLabel;
+@property (weak, nonatomic) IBOutlet UITextView *commentsTextView;
+
 @property (weak, nonatomic) IBOutlet UITextView *websiteTextView;
 @property (weak, nonatomic) IBOutlet UITextView *addressTextView;
 
