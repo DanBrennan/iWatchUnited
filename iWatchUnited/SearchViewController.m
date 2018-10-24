@@ -47,6 +47,14 @@
     self.countryPicker.delegate = self;
     
     
+    self.title = @"Country";
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
+
+    
+    
 }
 
 #pragma mark - Picker

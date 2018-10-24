@@ -38,6 +38,9 @@
     
     self.title = _myTitle;
     self.venues = _venues;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
     id delegate = [[UIApplication sharedApplication] delegate];
     self.managedObjectContext = [delegate managedObjectContext];
@@ -98,8 +101,13 @@
     
     VenueDetails *venue = [self.venues objectAtIndex:indexPath.row];
     
+    cell.backgroundColor = [UIColor blackColor];
+    
     cell.textLabel.text = venue.venueName;
-    cell.detailTextLabel.text = venue.city;
+    cell.textLabel.textColor = [UIColor whiteColor];
+    
+    cell.detailTextLabel.text = venue.address;
+    cell.detailTextLabel.textColor = [UIColor whiteColor];
 
     
     if ([venue.redbar containsString:@"y"]) {
@@ -108,11 +116,6 @@
     else{
         cell.imageView.image = [UIImage imageNamed:@"iWatchIcon.png"];
 
-    }
-    
-    if ([cell.textLabel.text  isEqual: @"Elephant & Wheelbarrow"]) {
-        cell.textLabel.textColor = [UIColor redColor];
-    
     }
     
     return cell;

@@ -29,6 +29,13 @@
     // Do any additional setup after loading the view from its nib.
     self.title = _myTitle;
     
+    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    
+
+    
     
     VenueDetails *venue = [[VenueDetails alloc] init];
     
@@ -48,6 +55,8 @@
     
     id delegate = [[UIApplication sharedApplication] delegate];
     self.managedObjectContext = [delegate managedObjectContext];
+    
+    
 
     
 }
@@ -74,6 +83,9 @@
     
     
     cell.textLabel.text = [self.cities objectAtIndex:indexPath.row];
+    cell.backgroundColor = [UIColor blackColor];
+    cell.textLabel.textColor = [UIColor whiteColor];
+
     
     return cell;
 }

@@ -24,6 +24,9 @@
         _detailItem = newDetailItem;
         
         self.title = _detailItem.venueName;
+        [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+        [self.navigationController.navigationBar
+         setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
         
 //        UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"badge.jpeg"]];
 //        [self.view addSubview:backgroundView];
