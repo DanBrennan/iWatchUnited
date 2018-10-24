@@ -31,6 +31,7 @@
 		ECA0644C19F2CEC4006430F0 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECA0644B19F2CEC4006430F0 /* earth.jpg */; };
 		ECA0645019F2D65D006430F0 /* earth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ECA0644F19F2D65D006430F0 /* earth.jpeg */; };
 		ECA0645619F3B9EE006430F0 /* redwhiteblackearth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECA0645519F3B9EE006430F0 /* redwhiteblackearth.jpg */; };
+		ECB308CE2180D50400574B29 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECB308CD2180D50400574B29 /* Readme.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		ECA0644B19F2CEC4006430F0 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		ECA0644F19F2D65D006430F0 /* earth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpeg; sourceTree = "<group>"; };
 		ECA0645519F3B9EE006430F0 /* redwhiteblackearth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redwhiteblackearth.jpg; sourceTree = "<group>"; };
+		ECB308CD2180D50400574B29 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		EC13B02B19DAFA930038C1A0 = {
 			isa = PBXGroup;
 			children = (
+				ECB308CD2180D50400574B29 /* Readme.txt */,
 				EC1BB43519DD7F860002493D /* libsqlite3.dylib */,
 				EC13B03619DAFA930038C1A0 /* iWatchUnited */,
 				EC13B05619DAFA930038C1A0 /* iWatchUnitedTests */,
@@ -301,6 +304,7 @@
 				ECA0640919EEC120006430F0 /* recommended.jpeg in Resources */,
 				EC13B04919DAFA930038C1A0 /* Main.storyboard in Resources */,
 				ECA0645619F3B9EE006430F0 /* redwhiteblackearth.jpg in Resources */,
+				ECB308CE2180D50400574B29 /* Readme.txt in Resources */,
 				ECA0640519ED736F006430F0 /* RNData.txt in Resources */,
 				EC2CC7BE19E32D130094EF2E /* CityViewController.xib in Resources */,
 				EC13B04E19DAFA930038C1A0 /* LaunchScreen.xib in Resources */,
